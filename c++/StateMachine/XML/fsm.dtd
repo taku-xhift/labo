@@ -1,0 +1,14 @@
+<!-- Document Type Definition for 'Finite State Machine' -->
+
+  <!ELEMENT FSM   (#PCDATA | State)* >
+  <!ATTLIST FSM   name     NMTOKEN #REQUIRED>
+  <!ATTLIST FSM   initial  NMTOKEN #REQUIRED>
+  <!ATTLIST FSM   terminal NMTOKEN "none">
+
+  <!ELEMENT State (#PCDATA | Event)* >
+  <!ATTLIST State name  NMTOKEN  #REQUIRED>
+
+  <!ELEMENT Event (#PCDATA)>
+  <!ATTLIST Event name       NMTOKEN  #REQUIRED>
+  <!ATTLIST Event transition NMTOKEN  "none">
+  <!ATTLIST Event action     NMTOKEN  "none">

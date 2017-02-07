@@ -1,0 +1,124 @@
+<html>
+<head>
+<script language="JavaScript"><!--
+var imgBase = new Image();
+imgBase = "embTest_4040_base_r.png"
+
+
+function cliced() {
+	text.innerText='Hello World!';
+}
+function pictureChange(id_, image_) {
+		//document.all(id).srcで指定された画像を変更する
+	if(document.all){
+		document.all(id_).src = image_;
+		//document.getElementById(id).srcで指定された画像を変更する
+	}else if(document.getElementById){
+		document.getElementById(id_).src = image_;
+	}
+}
+function combinePicture() {
+	location.href = "http://t4130082.konami/cgi-bin/Sample.cgi";
+	 //?&X=" + xx + "&Y=" + yy;
+}
+function makeColoredPicture(ImageID_, colorName_) {
+	var pngData = document.getElementById(ImageID_).src;
+	location.href = "http://t4130082.konami/cgi-bin/Combine/Combine.cgi?png=" + pngData.name + "&color=" + colorName_;
+}
+//--></script>
+<meta http-equiv="Content-type" content="text/html; charset=uff-8">
+<title>emblem combine</title>
+<style type="text/css">
+img.focused {
+    table-layout: fixed; 
+    width: 64px;
+    height: 64px;
+}
+img.pngSelector {
+	table-layout: fixed;
+	width: 16px;
+	height: 16px;
+}
+*.colorSelector {
+	width: 16px;
+	height: 16px;
+}
+</style>
+</head>
+<body>
+<font color="green" id="text"></font>
+<table width="80" height="80" border="0" bordercolor="#000000" bordercolorlight="#000000" bordercolordark="#000000" bgcolor="#FFFFFF" frame="lhs" rules="all">
+	<tr>
+		<td rowspan="4" colspan="4"><img class="focused" id="focused_base" src="embTest_4040_base_r.png"></img></td>
+		<td class="pngSelector"><img class="pngSelector" src="embTest_4040_base_r.png" onclick='pictureChange("focused_base", "embTest_4040_base_r.png")'></td>
+	</tr>
+	<tr>
+		<td class="pngSelector"><img class="pngSelector" src="embTest_4040_color2_r.png" onclick='pictureChange("focused_base", "embTest_4040_color2_r.png")'></td>
+	</tr>
+	<tr>
+		<td class="pngSelector"><img class="pngSelector" src="embTest_4040_color2_r.png"></td>
+	</tr>
+	<tr>
+		<td class="pngSelector"><img class="pngSelector" src="embTest_4040_color2_r.png"></td>
+	</tr>
+	<tr>
+		<td class="pngSelector"><img class="pngSelector" src="embTest_4040_color2_r.png"></td>
+		<td class="pngSelector"><img class="pngSelector" src="embTest_4040_color2_r.png"></td>
+		<td class="pngSelector"><img class="pngSelector" src="embTest_4040_color2_r.png"></td>
+		<td class="pngSelector"><img class="pngSelector" src="embTest_4040_color2_r.png"></td>
+		<td class="pngSelector"><img class="pngSelector" src="embTest_4040_color2_r.png"></td>
+	</tr>
+</table>
+
+
+<img id="picture" src="embTest_4040_color1_r.png" onclick='pictureChange("picture", "embTest_4040_base_r.png");'>
+
+
+<table width="16" height="16" border="1" bordercolor="#000000">
+	<tr>
+		<td class="colorSelector" bgcolor="blue"><img class="colorSelector" src="clear.png"></td>
+		<td class="colorSelector" bgcolor="red"><img class="colorSelector" src="clear.png" onclick='makeColoredPicture("picture", "red")'></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+
+
+<img id="combined" src="embTest_4040_base_r.png" onclick='combinePicture();'>
+</body>
+</html>

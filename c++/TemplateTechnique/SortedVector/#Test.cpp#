@@ -1,0 +1,12 @@
+
+#include "Sample.hpp"
+#include "string"
+#include "Test.hpp"
+
+Test::Test(void) {
+
+}
+
+Test::~Test() {
+
+}

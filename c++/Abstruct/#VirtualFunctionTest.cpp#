@@ -1,0 +1,42 @@
+
+
+
+#include <iostream>
+
+
+class Virtual
+{
+public:
+
+	virtual int getter()
+	{
+		return 1;
+	}
+};
+
+
+
+class Main
+{
+public:
+
+	int getter()
+	{
+		int local = 1;
+		local += getter();
+		return local;
+	}
+};
+
+
+
+int main()
+{
+	Main main1;
+
+	std::cout << main1.getter() << std::endl;
+
+	return 0;
+}
+
+

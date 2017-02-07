@@ -1,0 +1,16 @@
+
+#ifndef SAMPLE_HPP_INCLUDED
+#define SAMPLE_HPP_INCLUDED
+
+#include "iostream"
+
+class sample
+    : fdas
+{
+public:
+  sample(void);
+  virtual ~sample();
+
+};
+
+#endif

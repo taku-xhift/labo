@@ -1,0 +1,54 @@
+#Makefile
+
+# Macros
+TARGET = Hello
+
+CXX = g++
+
+#LIBS = -lboost_thread -lboost_filesystem \
+#       -I/usr/include/octave-`octave-config -v` \
+#       -L/usr/lib/octave-`octave-config -v` -loctave -lcruft \
+#       -I/usr/local/include -L/usr/local/lib -lode -ldrawstuff -lglut -l3ds
+
+# ls で ファイル、ディレクトリを検索させて、
+# そうやって得られて結果の文字列  directory の d で検索させて、
+SUBDIR := $(shell ls -l | awk '{print $$1,$$9}' | grep "^d" | awk '{print $$2}')
+
+SRCS = $(shell ls *.cpp)
+OBJS = $(SRCS:.cpp=.o)
+HEADS = $(shell ls *.hpp)
+
+CXXFLAGS = -o2 -g -Wall
+CXXOPTIONS = -lstdc++
+
+
+$(TARGET): $(OBJS) $(HEADS)
+	@echo $^
+	$(CXX) -o $(TARGET) $(CXXFLAGS) $(OBJS) $(LIBS) $(CSSOPTIONS)
+
+all: subsystem $(TARGET)
+	@echo $(SUBDIR)
+	@echo $(SRCS)
+	@echo $(OBJS)
+	@echo $(HEADS)
+#	@echo "all"
+
+run: all
+	@echo "run"
+	./$(TARGET)
+
+depend:
+	@echo "depend"
+	$(CXX) -MM -MG $(SRCS) > Makefile.depend
+
+clean:
+	@echo "clean"
+	rm -f $(OBJS) $(TARGET) *~ \#*\#
+
+subsystem: $(SUBDIR)
+	@echo "subsystem"
+	$(MAKE) -C $^
+
+-include Makefile.depend
+
+

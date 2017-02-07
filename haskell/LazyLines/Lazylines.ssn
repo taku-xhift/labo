@@ -1,0 +1,4 @@
+;;; xyzzy session file.
+;;; This file is generated automatically. do not edit.
+(in-package "user")
+(editor::restore-session '(("D:/PersonalTool/xyzzy/laboratory/haskell/LazyLines/CGIMain.hs" 1 (hs-mode) (nil))) '(("Frame 1" (window-configuration 0 ((nil ("D:/PersonalTool/xyzzy/laboratory/haskell/LazyLines/CGIMain.hs" . "CGIMain.hs") 1 0 nil nil nil nil nil nil nil 0 -1 0 (0 0 1 1) (0 0 653 572))) (653 594)) t)))

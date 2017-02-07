@@ -1,0 +1,12 @@
+
+def maxa(a, b)
+  if a > b
+    return a
+    end
+    end
+    
+
+p maxa(1, 5)
+
+p maxa(3, 2)
+

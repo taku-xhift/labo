@@ -1,0 +1,11 @@
+# /home/Makefile.in
+CC = g++
+CFLAGS = -g -Wall
+
+all : $(TARGETS)
+
+%.o : %.cpp
+	$(CC) $(CFLAGS) -c $*.cpp
+
+clean :
+	rm -f $(TARGETS) $(OBJS)

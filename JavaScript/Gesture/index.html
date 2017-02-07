@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=480, user-scalable=no, maximum-scale=0.6667" />
+<script type="text/javascript" charset="utf-8">
+<!--
+var width = 120;
+var height = 120;
+var rotation = 0;
+
+function init() {
+	document.addEventListener("touchmove", touchHandler, false);
+	document.addEventListener("gesturechange", gestureHandler, false);
+	document.addEventListener("gestureend", saveStyle, false);
+}
+
+function touchHandler(event) {
+	// スクロール機能の停止
+	event.preventDefault();
+}
+
+function gestureHandler(event) {
+	// リサイズと回転
+	var rect1 = document.getElementById('rect1');
+	rect1.style.width = (width * event.scale) + "px";
+	rect1.style.height = (height * event.scale) + "px";
+	rect1.style.webkitTransform = "rotate(" + ((rotation + event.rotation) % 360) + "deg)";
+}
+
+function saveStyle(event) {
+	// 変数に保存
+	width *= event.scale;
+	height *= event.scale;
+	rotation = (rotation + event.rotation) % 360;
+}
+// -->
+</script>
+</head>
+
+<body onLoad="init();">
+<div id="rect1" style="width:120px; height:120px; background-color:red; position:absolute; top:120px; left:120px;"></div>
+
+</body>
+</html>

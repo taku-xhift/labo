@@ -1,0 +1,84 @@
+{
+    "XML_MTMPLAYERMANAGEMENT":
+    {
+        "XML_INPUT":
+        {
+            "XML_RESULT":
+            {
+                "XML_CALC_RESULT_INFO":
+                {
+                    "player_id_": "0",
+                    "name_": "",
+                    "uni_num_": "0",
+                    "value_": "0",
+                    "agreement_": "0",
+                    "tired_": "0",
+                    "dp_": "0",
+                    "level_": "0",
+                    "fee_": "0"
+                },
+                "succeed_": "0",
+                "current_fund_": "0",
+                "next_add_agreement_matchnum_": "0"
+            },
+            "xml_entry_info_":
+            [
+                {
+                    "XML_ENTRY_INFO":
+                    {
+                        "player_id_": "40",
+                        "name_": "name",
+                        "uni_num_": "55",
+                        "value_": "40000",
+                        "agreement_": "0",
+                        "tired_": "0",
+                        "dp_": "0",
+                        "level_": "0",
+                        "fee_": "0"
+                    }
+                }
+            ],
+            "xml_save_info_":
+            [
+                {
+                    "XML_SAVE_INFO":
+                    {
+                        "player_id_": "204",
+                        "name_": "save name",
+                        "uni_num_": "0",
+                        "value_": "0",
+                        "agreement_": "0",
+                        "tired_": "0",
+                        "dp_": "0",
+                        "level_": "0",
+                        "fee_": "40"
+                    }
+                },
+                {
+                    "XML_SAVE_INFO":
+                    {
+                        "player_id_": "204",
+                        "name_": "save name",
+                        "uni_num_": "0",
+                        "value_": "0",
+                        "agreement_": "0",
+                        "tired_": "0",
+                        "dp_": "0",
+                        "level_": "0",
+                        "fee_": "40"
+                    }
+                }
+            ],
+            "change_": "0",
+            "current_fund_": "0",
+            "add_agreement_matchnum_": "0"
+        },
+        "XML_OUTPUT":
+        {
+            "change_": "0",
+            "selected_player_id_": "0",
+            "sel_uni_num_": "0",
+            "selected_item_id_": "0"
+        }
+    }
+}

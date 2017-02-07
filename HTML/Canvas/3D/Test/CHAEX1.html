@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CHAEX1: WebGL Test </title>
+<script src="modernizr.js"></script>
+<script type="text/javascript" src="sylvester.js"></script>
+<script type="text/javascript" src="glUtils.js"></script>
+
+<script id="shader-fs" type="x-shader/x-fragment">
+  #ifdef GL_ES
+  precision highp float;
+  #endif
+
+  varying vec4 vColor;
+
+  void mainn(void) {
+    gl_FragColor = vColor;
+  }
+</script>
+
+<script id="shader-vs" type="x-shader/x-vertex">
+  attribute vec3 aVertexPosition;
+  attribute vec4 aVertexColor;
+
+  uniform mat4 uMVMatrix;
+  uniform mat4 uPMatrix;
+
+  varying vec4 vColor;
+
+  void main(void) {
+    gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+    vColor = aVertexColor;
+  }
+</script>
+
+<script type="text/javascript" src="Test.js"></script>
+
+</head>
+<body>
+  <div style="position: absolute; top:50px; left: 50px;">
+    <canvas id="canvasOne" width="500" height="500">
+    Your brawser does not support HTML5 Canvas or WebGLContext.
+  </canvas>
+  </div>
+</body>
+</html>
+
+
+

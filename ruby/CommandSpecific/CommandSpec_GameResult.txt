@@ -1,0 +1,183 @@
+###########################################################
+#   @COMMAND   GameResult
+#
+#   @BRIEF      ＤＢに試合結果を書き込むためのコマンド。
+#   @USER       LeagueModeManagerState.cpp  LeagueMode::ResultState::run()
+#   @PURPOSE    put, get
+#
+#   @AUTHOR     Takuya Shishido
+#   @DATE       2010.04.26  21:00:41
+###########################################################
+
+#############################
+#   define
+#############################
+
+# @BRIEF    過去にさかのぼれる試合数
+DEFINE INT latestGameNumberMax:    100
+
+
+#############################
+#   型定義
+#############################
+
+# @BRIEF    試合結果用文字列。どれかが返ってくる可能性がある。
+ENUM STRING Result {
+    "win":              (勝利)
+    "lose":             (敗北)
+    "pkwin":            (ＰＫで勝利)
+    "pklose":           (ＰＫで敗北)
+    "draw":		(引き分け)
+
+    "finished":		(きちんと終了)
+    "forfeitedgame":     (没収試合)
+    "invalid":          (無効試合など)
+    "disconnect":	(切断)
+}
+
+# @BRIEF    対戦に関わった人の数
+ENUM STRING MatchupNumber {
+	"one":              (１人。CPU 戦)
+	"two":              (２人)
+	"three_friend":     (３人で、味方が１人、対戦相手１人の場合)
+	"three_enemy":      (３人で、対戦相手が２人の場合)
+	"four":             (４人で、両方２人)
+}
+
+# @BRIEF    ホーム、アウェイ状況
+ENUM STRING HomeAndAway {
+	"home":         (自分がホームチーム)
+	"away":         (自分がアウェイチーム)
+}
+
+# @BRIEF    １人のユーザの１試合の結果（対戦相手も同じようなデータを持つ）
+STRUCT GameResult {
+    INT             adversaryID[0...2]: (対戦相手のユーザＩＤ。対戦相手の数の可能性は３人まで)
+    MatchupNumber   matchupNumber:      (対戦に関わった人数)
+    INT             time:               (対戦開始時間)
+    INT             teamID:             (使用チーム)
+    INT             oppositionTeamID:   (対戦相手使用チーム)
+    Result          victory:            (自分から見た対戦結果)
+    INT             firstHalfGoal:      (自分から見た前半ゴール数)
+    INT             secondHalfGoal:     (自分から見た後半ゴール数)
+    INT             firstHalfLoss:      (自分から見た前半失点数)
+    INT             secondHalfLoss:     (自分から見た後半失点数)
+    HomeAndAway     homeAndAway:        (ホーム・アウェイ状況)
+}
+
+
+# @BRIEF    試合結果の書き込み用
+STRUCT GameResultForRecording {
+    INT             homeUserID[0...3]:  (参加ユーザーのユーザＩＤ。ユーザーの数の可能性は４人まで)
+    INT             awayUserID[0...3]:  (参加ユーザーのユーザＩＤ。ユーザーの数の可能性は４人まで)
+    MatchupNumber   matchupNumber:      (対戦に関わった人数)
+    INT             time:               (対戦開始時間)
+    Result	        result:		(試合結果)
+    INT             homeTeamID:         (ホーム側使用チーム)
+    INT             awayTeamID:   	(アウェイ側使用チーム)
+    INT             homeFirstHalfGoal:  (ホーム側前半ゴール数)
+    INT             awayFirstHalfGoal:  (アウェイ側前半ゴール数)
+    INT             homeSecondHalfGoal: (ホーム側後半ゴール数)
+    INT             awaySecondHalfGoal: (アウェイ側後半ゴール数)
+    INT		        homeRedCard:	(ホーム側レッドカード)
+    INT		        awayRedCard:	(アウェイ側レッドカード）
+    INT		        homeYellowCard:	(ホーム側イエローカード)
+    INT		        awayYellowCard:	(アウェイ側イエローカード）
+    INT		        homeFaul:		(ホーム側ファール)
+    INT		        awayFaul:		(アウェイ側ファール）
+    INT		        homeShot:		(ホーム側シュート数)
+    INT		        awayShot:		(アウェイ側シュート数）
+    INT		        homeShotOnGoal:	(ホーム側使用チーム)
+    INT		        awayShotOnGoal:	(アウェイ側使用チーム)
+    INT		        homeFreeKick:	(ホーム側使用チーム)
+    INT		        awayFreeKick:	(アウェイ側使用チーム)
+    INT		        homeCornerKick:	(ホーム側使用チーム)
+    INT		        awayCornerKick:	(アウェイ側使用チーム)
+    INT		        homePenaltyKick:	(ホーム側使用チーム)
+    INT		        awayPenaltyKick:	(アウェイ側使用チーム)
+    INT		        homeOffside:	(ホーム側使用チーム)
+    INT		        awayOffside:	(アウェイ側使用チーム)
+    INT		        homePossesionRate:	(ホーム側使用チーム)
+}
+
+
+
+
+# @BRIEF    エラー処理用文字列。どれかが返ってくる可能性がある。
+ENUM STRING Error {
+    "errnoerror":       (エラーなし)
+    "errnotfounduser":  (ユーザが見つからなかった)
+    "errnotfound":      (データが見つからなかった)
+    "errnotfoundpair":  (対戦相手の成績が見つからなかった)
+    "errcannotwrite":   (書き込めなかった)
+    "errcommand":       (コマンド生成エラー)
+    "errinvaliddata":   (コマンドで渡したデータに不備)
+    "errdberror":       (ＤＢでなにかエラーがあった)
+}
+
+
+
+#############################
+#   コマンド発行
+#############################
+
+# @BRIEF    試合結果をＤＢに保存する。
+# @PURPOSE  put
+# @RETVAL   特になし
+# @ERROR    "errnoerror" | "errnotfounduser" | "errcannotwrite" | "errcommand" | "errinvaliddata" | "errdberror"
+COMMAND GameResult {
+    INT             		userID:         (ユニークなユーザのＩＤ)
+    GameResultForRecording	gameRusult:     (試合結果)
+}
+
+# @BRIEF    試合結果を試合日時を使ってＤＢから取得する。一致しなければ取得できない。
+# @PURPOSE  get
+# @RETVAL   試合結果情報。例えば月で指定すれば、その月の試合結果を全て取得する。ただし、数は latestGameNumberMax 以下で、それ以上ある場合は古いものをＤＢ側でカットする。
+# @ERROR    "errnoerror" | "errnotfounduser" | "errnotfound" | "errnotfoundpair" | "errcommand" | "errinvaliddata" | "errdberror"
+COMMAND GameResult {
+    INT     userID:         (ユニークなユーザのＩＤ)
+    INT     month:          (月)
+    INT     day:            (日)
+    INT     hour:           (時間)
+    INT     system:         (システム時間。ピンポイント指定の場合 UTC/64bit)
+}
+
+# @BRIEF    最新の試合から指定した数の試合数分だけ結果を取得する。
+# @PURPOSE  get
+# @RETVAL   試合結果情報。但し、数は latestGameNumberMax 以下で、それより多い数を指定した場合は "errinvaliddata" を返す。
+# @ERROR    "errnoerror" | "errnotfounduser" | "errnotfound" | "errnotfoundpair" | "errcommand" | "errinvaliddata" | "errdberror"
+COMMAND GameResult {
+    INT     userID:         (ユニークなユーザのＩＤ)
+    INT     latestGameNum:  (取得したい試合数)
+}
+
+
+
+#############################
+#   返り値
+#############################
+
+# @PURPOSE  put
+RETURN_VALUE GameResult {
+    Error       error:          (エラーの有無と内容)
+}
+
+# @PURPOSE  get
+RETURN_VALUE GameResult {
+    Error       error:                                  (エラーの有無と内容)
+    GameResult  gameResult[1...latestGameNumberMax]:    (試合結果)
+}
+
+
+#############################
+#   履歴
+#############################
+# 2010-04-26  21:00:41  (宍戸) 新規作成
+# 2010-05-06  16:06:14  (宍戸) コマンドにユーザＩＤが必要になった。
+#                              それに伴い、エラー処理も "errnotfounduser" が増えた。
+# 2010-05-10  20:23:19  (宍戸) 試合結果の内容が使いにくいものだったので修正
+#                               GameResult に前後半成績に分解、対戦相手チーム情報、home 状況 について追記
+#                               コマンド発行の @PURPOSE, @RETVAL を追記
+# Fri May 21 18:14:47 2010 (宮崎) ENUM STRING Result に引き分け等を追加
+# 
+# 

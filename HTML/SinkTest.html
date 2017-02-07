@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>example</title>
+
+<script language="jscript">
+function docLoad()
+{
+	document.getElementById("curNumber").innerText = ssd_ExtObject.getStrings();
+	return;
+}
+
+function setNumber(num)
+{
+	ExtObject.SetNumber(num);
+}
+
+function ExtObject_OnNumberChanged(num)
+{
+	document.getElementById("curNumber").innerText = num;
+}
+
+</script>
+</head>
+
+<body onLoad="docLoad()">
+<font face="arial" size="2">Number is: <span id="curNumber"></span></font>
+<br/>
+<br/>
+<input type="button" value="change number" onClick="javascript:setNumber(Math.floor(Math.random() * 100));"/>
+<br/><br/>
+<font face="arial" size="1">
+Write by D:/PersonalTool/xyzzy/laboratory/HTML/SinkTest.html.<br/>
+</font>
+</body>
+</html>

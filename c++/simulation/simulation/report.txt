@@ -1,0 +1,52 @@
+ñ≥å¯Ç»ÉfÅ[É^Ç™ìnÇ≥ÇÍÇ‹ÇµÇΩ
+
+
+city;
+level = 1;
+income = 1000;
+node = 2;
+neighbor = 4;
+group = 1;
+power = 3;
+importance = 4;
+cityID = 0;
+name = city0;
+
+
+city;
+level = 2;
+income = 1000;
+node = 2;
+neighbor = 4;
+group = 1;
+power = 3;
+importance = 4;
+cityID = 1;
+name = city1;
+
+
+city;
+level = 1;
+income = 1000;
+node = 2;
+neighbor = 4;
+group = 1;
+power = 3;
+importance = 4;
+cityID = 2;
+name = city2;
+
+
+city;
+level = 1;
+income = 1000;
+node = 2;
+neighbor = 4;
+group = 1;
+power = 3;
+importance = 4;
+cityID = 3;
+name = city3;
+
+
+End Game.

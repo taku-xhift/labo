@@ -1,0 +1,93 @@
+###########################################################
+#   @COMMAND   TeamData
+#
+#   @BRIEF      ＤＢからチームデータを取得するコマンド
+#                   コマンド発行は、チーム名、ＩＤの２通りの指定方法がある
+#   @USER       LeagueModeManagerState.cpp  LeagueMode::GetDataState::run()
+#   @PURPOSE    get
+#
+#   @AUTHOR     Takuya Shishido
+#   @DATE       2010.04.22 12:52:03
+###########################################################
+
+@INCLUDE commandtest.txt
+@INCLUDE commandtest2.txt
+
+#############################
+#   define
+#############################
+
+# @BRIEF    文字の最大数
+DEFINE INT charSize:   32
+
+# @BRIEF    選手の最大数。これを超えたらＤＢの方で切り捨て。
+DEFINE INT playerMax:  35
+
+
+
+#############################
+#   型定義
+#############################
+
+# @BRIEF     選手１人分のデータ
+STRUCT PlayerData {
+    CHAR      playerName[1...charSize]:   (選手の名前)
+    INT       playerID:             (選手用のユニークＩＤ)
+    INT       offence:              (選手攻撃力)
+    INT       defence:              (選手守備力)
+}
+
+# @BRIEF    １チーム分のデータ
+STRUCT TeamData {
+    INT         teamID:                     (チーム用ユニークＩＤ)
+    CHAR        teamName[1...charSize]:     (チームの名前)
+    INT         playerNumber:               (member_data 内の有効データ数)
+    PlayerData  memberData[0...playerMax]:  (選手データ)
+}
+
+# @BREIF    エラー処理用文字列。どれかが返ってくる可能性がある。
+ENUM STRING Error {
+    "errNoError":       (エラーなし)
+    "errNotFound":      (見つからなかった)
+    "errCommand":       (コマンド生成エラー)
+    "errInvalidData":   (コマンドで渡したデータに不備)
+    "errDBError":       (ＤＢでなにかエラーがあった)
+}
+
+
+
+#############################
+#   コマンド発行
+#############################
+# @BRIEF    チーム名をＤＢに渡して完全一致したチームの選手のデータを全て取得する。部分一致は認めない。
+# @RETVAL   TeamData
+# @ERROR    "errNoError" | "errNotFound" | "errCommand" | "errInvalidData" | "errDBError"
+COMMAND TeamData {
+    STRING      teamName:   (チーム名)
+}
+
+# @BRIEF    チームＩＤをＤＢに渡して一致したチームの選手のデータを全て取得する
+# @RETVAL   TeamData
+# @ERROR    "errNoError" | "errNotFound" | "errCommand" | "errInvalidData" | "errDBError"
+COMMAND TeamData {
+    INT         teamID:     (チーム用ユニークＩＤ)
+}
+
+
+
+#############################
+#   返り値
+#############################
+# @BRIEF   チームが見つかれば STRUCT TeamData (チーム名、チームＩＤ、有効選手数、選手データ）
+RETURN_VALUE TeamData {
+    TeamData    teamData:   (チームのデータ)
+    Error       error:      (エラーの有無と内容)
+}
+
+
+#############################
+#   履歴
+#############################
+# 2010-00-00  00:00:00 （宍戸）新規作成  # もう日時があいまいなので…
+# 2010-04-26  15:44:05 （宍戸）PlayerData に player_number を追加
+# 2010-04-26  19:42:51 （宍戸）コメント追加

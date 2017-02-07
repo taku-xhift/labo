@@ -1,0 +1,449 @@
+
+
+====================PrintStart====================
+nowState => init
+preState => init
+
+
+====================PrintStart====================
+nowState => TeamSelect
+preState => init
+
+
+====================PrintStart====================
+nowState => TeamSelect
+preState => init
+
+
+====================PrintStart====================
+nowState => Release
+preState => TeamSelect
+LeagueMode/cpp/LeagueModeManager.cpp318
+behaviorGame
+アーセナル
+アストン ヴィラ
+
+
+====================PrintStart====================
+nowState => init
+preState => Release
+
+
+====================PrintStart====================
+nowState => GetData
+preState => init
+必要な２チームのチーム情報を取得完了
+home : アーセナル, away : アストン ヴィラ
+チーム情報 : 
+home : 
+TeamData Information
+name : アーセナル
+playerNumber : 32
+playerData:
+player[0] : 
+name : アルムニア
+entryNumber : 7359
+offence : 30
+defence : 90
+
+player[1] : 
+name : フェルマーレン
+entryNumber : 6263
+offence : 58
+defence : 85
+
+player[2] : 
+name : ギャラス
+entryNumber : 2033
+offence : 63
+defence : 89
+
+player[3] : 
+name : サニャ
+entryNumber : 7793
+offence : 74
+defence : 64
+
+player[4] : 
+name : クリシ
+entryNumber : 5408
+offence : 76
+defence : 60
+
+player[5] : 
+name : ソング ビロング
+entryNumber : 9117
+offence : 60
+defence : 69
+
+player[6] : 
+name : セスク
+entryNumber : 7959
+offence : 80
+defence : 58
+
+player[7] : 
+name : デニウソン
+entryNumber : 33639
+offence : 69
+defence : 67
+
+player[8] : 
+name : ウォルコット
+entryNumber : 33700
+offence : 77
+defence : 46
+
+player[9] : 
+name : アルシャヴィン
+entryNumber : 5786
+offence : 82
+defence : 57
+
+player[10] : 
+name : ファン ペルシー
+entryNumber : 3582
+offence : 90
+defence : 37
+
+player[11] : 
+name : ファビアンスキ
+entryNumber : 34437
+offence : 30
+defence : 83
+
+player[12] : 
+name : センデロス
+entryNumber : 5407
+offence : 57
+defence : 81
+
+player[13] : 
+name : シルヴェストル
+entryNumber : 1880
+offence : 65
+defence : 77
+
+player[14] : 
+name : ジュルー
+entryNumber : 9602
+offence : 60
+defence : 73
+
+player[15] : 
+name : ディアビ
+entryNumber : 9405
+offence : 71
+defence : 65
+
+player[16] : 
+name : ラムジー
+entryNumber : 38082
+offence : 66
+defence : 62
+
+player[17] : 
+name : キーラン ギブス
+entryNumber : 38081
+offence : 66
+defence : 44
+
+player[18] : 
+name : エブエ
+entryNumber : 30209
+offence : 70
+defence : 65
+
+player[19] : 
+name : ナスリ
+entryNumber : 8946
+offence : 79
+defence : 44
+
+player[20] : 
+name : エドゥアルド
+entryNumber : 30186
+offence : 82
+defence : 43
+
+player[21] : 
+name : ベントナー
+entryNumber : 33870
+offence : 77
+defence : 44
+
+player[22] : 
+name : C. ベラ
+entryNumber : 33701
+offence : 75
+defence : 48
+
+player[23] : 
+name : マンノーネ
+entryNumber : 33876
+offence : 30
+defence : 72
+
+player[24] : 
+name : ギルバート
+entryNumber : 33869
+offence : 66
+defence : 59
+
+player[25] : 
+name : アルマン トラオレ
+entryNumber : 35184
+offence : 68
+defence : 61
+
+player[26] : 
+name : フラン メリダ
+entryNumber : 35148
+offence : 66
+defence : 40
+
+player[27] : 
+name : ウィルシャー
+entryNumber : 38594
+offence : 63
+defence : 45
+
+player[28] : 
+name : ランドール
+entryNumber : 35183
+offence : 62
+defence : 58
+
+player[29] : 
+name : ブラジテ
+entryNumber : 40272
+offence : 64
+defence : 40
+
+player[30] : 
+name : ロシツキー
+entryNumber : 1001
+offence : 82
+defence : 59
+
+player[31] : 
+name : ジェイ シンプソン
+entryNumber : 38825
+offence : 72
+defence : 33
+
+
+away : 
+TeamData Information
+name : アストン ヴィラ
+playerNumber : 32
+playerData:
+player[0] : 
+name : フリーデル
+entryNumber : 2714
+offence : 40
+defence : 90
+
+player[1] : 
+name : カーティス デイヴィス
+entryNumber : 33266
+offence : 55
+defence : 78
+
+player[2] : 
+name : クエジャル
+entryNumber : 7394
+offence : 53
+defence : 83
+
+player[3] : 
+name : ベイェ
+entryNumber : 3862
+offence : 67
+defence : 78
+
+player[4] : 
+name : ショーリー
+entryNumber : 34613
+offence : 71
+defence : 66
+
+player[5] : 
+name : スティリアン ペトロフ
+entryNumber : 1296
+offence : 74
+defence : 70
+
+player[6] : 
+name : デルフ
+entryNumber : 40557
+offence : 66
+defence : 60
+
+player[7] : 
+name : ミルナー
+entryNumber : 4882
+offence : 75
+defence : 53
+
+player[8] : 
+name : アシュリー ヤング
+entryNumber : 34641
+offence : 77
+defence : 49
+
+player[9] : 
+name : ヘスキー
+entryNumber : 827
+offence : 80
+defence : 56
+
+player[10] : 
+name : アグボンラホー
+entryNumber : 33910
+offence : 81
+defence : 42
+
+player[11] : 
+name : グザン
+entryNumber : 37918
+offence : 30
+defence : 80
+
+player[12] : 
+name : ダン
+entryNumber : 721
+offence : 58
+defence : 84
+
+player[13] : 
+name : バウマ
+entryNumber : 935
+offence : 66
+defence : 80
+
+player[14] : 
+name : ルーク ヤング
+entryNumber : 7924
+offence : 69
+defence : 66
+
+player[15] : 
+name : ウォーノック
+entryNumber : 9041
+offence : 72
+defence : 69
+
+player[16] : 
+name : レオ コーカー
+entryNumber : 32233
+offence : 68
+defence : 69
+
+player[17] : 
+name : クレイグ ガードナー
+entryNumber : 33909
+offence : 67
+defence : 65
+
+player[18] : 
+name : シドウェル
+entryNumber : 34614
+offence : 75
+defence : 60
+
+player[19] : 
+name : ダウニング
+entryNumber : 7181
+offence : 76
+defence : 56
+
+player[20] : 
+name : ヘアウッド
+entryNumber : 32236
+offence : 78
+defence : 36
+
+player[21] : 
+name : デルフォンソ
+entryNumber : 37283
+offence : 70
+defence : 31
+
+player[22] : 
+name : カリュー
+entryNumber : 1070
+offence : 83
+defence : 50
+
+player[23] : 
+name : アンディ マーシャル
+entryNumber : 40561
+offence : 30
+defence : 77
+
+player[24] : 
+name : リチャイ
+entryNumber : 40280
+offence : 55
+defence : 70
+
+player[25] : 
+name : シアラン クラーク
+entryNumber : 38790
+offence : 49
+defence : 67
+
+player[26] : 
+name : ジェームズ コリンズ
+entryNumber : 9541
+offence : 64
+defence : 75
+
+player[27] : 
+name : オズボーン
+entryNumber : 35185
+offence : 57
+defence : 68
+
+player[28] : 
+name : ハード
+entryNumber : 38787
+offence : 55
+defence : 60
+
+player[29] : 
+name : バナン
+entryNumber : 38789
+offence : 61
+defence : 53
+
+player[30] : 
+name : アルブライトン
+entryNumber : 40281
+offence : 60
+defence : 54
+
+player[31] : 
+name : ムスタファ サリフ
+entryNumber : 33026
+offence : 70
+defence : 57
+
+
+
+
+====================PrintStart====================
+nowState => Game
+preState => GetData
+TeamData アーセナル and アストン ヴィラ is Game in Europe.
+
+
+====================PrintStart====================
+nowState => Result
+preState => Game
+
+
+====================PrintStart====================
+nowState => Release
+preState => Result
