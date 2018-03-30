@@ -5,6 +5,7 @@
 #include <string>
 #include <algorithm>
 #include <tuple>
+#include <memory>
 
 std::string input;
 

@@ -1,4 +1,4 @@
-/**
+ï»¿/**
  * @file
  * @brief 
  *
@@ -27,7 +27,7 @@ void DispParam::position(const std::string& position) throw(ConvertError) {
 	this->position_ = posConverter(position);
 }
 
-// o—Í
+// å‡ºåŠ›
 std::ostream& operator<<(std::ostream& os, const DispParam& param) throw()
 {
 	os << "team = " << param.team() << "\n";
@@ -55,7 +55,7 @@ std::ostream& operator<<(std::ostream& os, const DispParam& param) throw()
 	return os;
 }
 
-// o—Í
+// å‡ºåŠ›
 std::ostream& operator<<(std::ostream& os, const SeasonRecord& param) throw()
 {
 	os << "rank = " << param.rank << "\n";
@@ -112,7 +112,7 @@ void Team::reset() throw() {
 }
 
 
-// o—Í
+// å‡ºåŠ›
 std::ostream& operator<<(std::ostream& os, const Team& param) throw()
 {
 	os << "=======================================================" << "\n\n";
@@ -154,7 +154,7 @@ std::ostream& operator<<(std::ostream& os, const Team& param) throw()
 	return os;
 }
 
-// o—Í
+// å‡ºåŠ›
 std::ostream& operator<<(std::ostream& os, const RoundRobin& param) throw()
 {
 	int count = 0;
@@ -178,7 +178,7 @@ int awayGoalNum(const Team& attacker, const Team& defencer) throw() {
 	return std::max(0, static_cast<int>(temp));
 }
 
-// ˆê’UŠ®¬”Å
+// ä¸€æ—¦å®Œæˆç‰ˆ
 
 
 int goalNum(const Team& attacker, const Team& defencer) throw() {
@@ -197,7 +197,7 @@ int goalNum(const Team& attacker, const Team& defencer) throw() {
 }
 
 
-// defence ‚ª 30 ”{‚³‚ê‚Ä‚¢‚È‚¢‚ªÄ“x•Û—¯
+// defence ãŒ 30 å€ã•ã‚Œã¦ã„ãªã„ãŒå†åº¦ä¿ç•™
 //int goalNum(const Team& attacker, const Team& defencer) throw() {
 //	float attack = 30.0f*attacker.offence()+(attacker.star()/.10f);
 //	float pass = 10*attacker.pass()+attacker.connection()/100.0f;
@@ -211,7 +211,7 @@ int goalNum(const Team& attacker, const Team& defencer) throw() {
 
 
 
-// ˆê’UŠ®¬”Å
+// ä¸€æ—¦å®Œæˆç‰ˆ
 //int goalNum(const Team& attacker, const Team& defencer) throw() {
 //	float temp = (attacker.offence()*attacker.connection()*(attacker.star()/60.0f)/4.0f
 //	                - (defencer.defence() + defencer.gkSkill()))
@@ -221,7 +221,7 @@ int goalNum(const Team& attacker, const Team& defencer) throw() {
 
 OneMatchResult matchup(Team& home, Team& away, unsigned int restDay, unsigned int maxNameSize) throw()
 {
-	// ƒGƒ‰[ˆ—
+	// ã‚¨ãƒ©ãƒ¼å‡¦ç†
 	//if (restDay == -1) { throw std::invalid_argument(ExceptionMessage("")); }
 
 	float homeGoal = static_cast<float>(home.goalPoints())/static_cast<float>((restDay+1)*100);
@@ -240,7 +240,7 @@ OneMatchResult matchup(Team& home, Team& away, unsigned int restDay, unsigned in
 	away.goalPoints(away.goalPoints()-static_cast<int>(awayGoal)*100);
 
 
-	// Ÿ—˜ƒJƒEƒ“ƒg
+	// å‹åˆ©ã‚«ã‚¦ãƒ³ãƒˆ
 	if (static_cast<int>(homeGoal) > static_cast<int>(awayGoal)) {
 		home.addWin();
 		away.addLose();
@@ -252,12 +252,12 @@ OneMatchResult matchup(Team& home, Team& away, unsigned int restDay, unsigned in
 		away.addWin();
 	}
 
-	// •Ô‚è’lì‚é
+	// è¿”ã‚Šå€¤ä½œã‚‹
 	return OneMatchResult(home.team(), homeGoal, away.team(), awayGoal, maxNameSize);
 }
 
 
-// o—Í
+// å‡ºåŠ›
 std::ostream& operator<<(std::ostream& os, const OneMatchResult& param) throw()
 {
 	os << param.home_;
@@ -271,7 +271,7 @@ std::ostream& operator<<(std::ostream& os, const OneMatchResult& param) throw()
 }
 
 
-// o—Í
+// å‡ºåŠ›
 std::ostream& operator<<(std::ostream& os, const OneDayMatchResult& param) throw() {
 	os << "day : " << param.day_ << "\n";
 	for (unsigned int i = 0; i < param.result_.size(); ++i) {
@@ -284,11 +284,11 @@ std::ostream& operator<<(std::ostream& os, const OneDayMatchResult& param) throw
 
 
 void SeasonResult::finishSeazon() throw() {
-	// ‡ˆÊ‚É‰‚¶‚Ä•À‚Ñ‘Ö‚¦
+	// é †ä½ã«å¿œã˜ã¦ä¸¦ã³æ›¿ãˆ
 	//this->sortTeam(SortByGoalPointsGreater());
 	this->sortTeam(SortByPointsGreater());
 	for (unsigned int i = 0; i < this->teamList_.size(); ++i) {
-		// •À‚×‘Ö‚¦‚ç‚ê‚½‡ˆÊ‚ğ“n‚·
+		// ä¸¦ã¹æ›¿ãˆã‚‰ã‚ŒãŸé †ä½ã‚’æ¸¡ã™
 		this->teamList_.at(i).rank(i);
 		this->teamList_.at(i).goNextSeazon();
 	}
@@ -298,7 +298,7 @@ void SeasonResult::finishSeazon() throw() {
 }
 
 
-// o—Í
+// å‡ºåŠ›
 std::ostream& operator<<(std::ostream& os, const SeasonResult& param) throw()
 {
 	unsigned int count = 0;

@@ -42,6 +42,7 @@ int main() {
 		Test test;
 
 		test.integer_ = 4;
+    test.integer_ = 4;全然ダメじゃん
 		std::cout << test.integer_ << std::endl;
 
 		Derived d;

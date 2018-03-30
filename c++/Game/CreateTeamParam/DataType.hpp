@@ -562,6 +562,9 @@ public:
 		std::sort(this->teamList_.begin(), this->teamList_.end(), functor);
 	}
 
+	/**
+	 * コメントテスト
+	 */
 	void finishSeazon() throw();
 
 	bool isAllScheduleFinished() const throw() { return (this->schedule_.day()*this->roop_ == this->day_); }

@@ -19,7 +19,6 @@
 //  include
 //-----------------------------------------------------
 #include <assert.h>
-#include <Personal/StreamObject.hpp>
 #include "Define.hpp"
 #include "DataType.hpp"
 
