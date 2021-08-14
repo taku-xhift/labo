@@ -1,0 +1,78 @@
+
+###
+# チームデータ取得
+###
+
+
+#####
+#   構造体
+#####
+Struct:
+    &PlayerData
+        player:
+            type:   DB_DATATYPE_STRUCT
+            num:    4
+            value:
+                playername:
+                    type:   DB_DATATYPE_STRING  # Perl で必要ない
+                    num:    1
+                    value:  (選手の名前)
+                playerid:       
+                    type:   DB_DATATYPE_INT
+                    num:    1
+                    value:  (選手用のユニークＩＤ)
+                offence:
+                    type:   DB_DATATYPE_INT
+                    num:    1
+                    value:  (選手攻撃力)
+                defence:
+                    type:   DB_DATATYPE_INT
+                    num:    1
+                    value:  (選手守備力)
+
+
+###
+# コマンド発行
+###
+teamData:
+    type:   DB_DATATYPE_STRUCT
+    num:    2
+    value:
+          teamid:
+              type:   DB_DATATYPE_INT
+              num:    1
+              value:  (チーム用ユニークＩＤ)
+          teamname:
+              type:   DB_DATATYPE_STRING
+              num:    1
+              value:  (チーム名)
+
+###
+# 返り値
+###
+teamData:
+    type:   DB_DATATYPE_STRUCT
+    num:    1
+    value:
+        teamid:
+            type:   DB_DATATYPE_INT
+            num:    1
+            value:  (チーム用のユニークＩＤ)
+        teamname:
+            type:   DB_DATATYPE_STRING
+            num:    1
+            value:  (チームの名前)
+        member_data:
+            type:   DB_DATATYPE_STRUCTARRAY
+            num:    35
+            value:  - *PlayerData
+error:
+    type:   DB_DATATYPE_STRING
+    num:    1
+    value:
+        - errnoerror:       (エラーなし)
+        - errnotfound:      (見つからなかった)
+        - errcommand:       (コマンド生成エラー)
+        - errinvaliddata:   (コマンドで渡したデータに不備)
+        - errdberror:       (ＤＢでなにかエラーがあった)
+

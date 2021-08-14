@@ -1,0 +1,4 @@
+;;; xyzzy session file.
+;;; This file is generated automatically. do not edit.
+(in-package "user")
+(editor::restore-session '(("D:/PersonalTool/xyzzy/laboratory/c++/StatePatern/main.cpp" 71 (c++-mode) (nil)) ("D:/PersonalTool/xyzzy/laboratory/c++/StatePatern/StateMachine.hpp" 1007 (c++-mode) (nil)) ("D:/PersonalTool/xyzzy/laboratory/c++/StatePatern/StateMachine.cpp" 186 (c++-mode) (nil)) ("D:/PersonalTool/xyzzy/laboratory/c++/StatePatern/StateManager.hpp" 134 (c++-mode gtags-mode cscope-mode) (nil)) ("D:/PersonalTool/xyzzy/laboratory/c++/StatePatern/StateManager.cpp" 75 (c++-mode gtags-mode cscope-mode) (nil))) '(("Frame 1" (window-configuration 0 ((nil ("D:/PersonalTool/xyzzy/laboratory/c++/StatePatern/StateMachine.cpp" . "StateMachine.cpp") 186 0 267 nil nil nil nil nil nil 0 -1 0 (0 0 1 1) (0 0 1280 655))) (1280 677)) t)))

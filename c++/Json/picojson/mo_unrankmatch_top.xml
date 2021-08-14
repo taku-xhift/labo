@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mo_unrankmatch_top>
+	<input>
+		<change __type="u8">0</change>
+		<name __type="str">自分のユーザー名</name>
+		<team __type="str">自分のチーム名</team>
+		<com_user_icon>
+			<input>
+				<change __type="u8">1</change>
+				<id __type="u8">2</id>
+			</input>
+		</com_user_icon>
+		<com_user_icon>
+			<input>
+				<change __type="u8">1</change>
+				<id __type="u8">2</id>
+			</input>
+		</com_user_icon>
+		<room_info>
+			<room_name __type="str">部屋Ａ</room_name>
+			<host_user __type="str">ホストユーザーＡ</host_user>
+			<host_team __type="str">ホストチームＡ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">0</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">109</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">0</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｂ</room_name>
+			<host_user __type="str">ホストユーザーＢ</host_user>
+			<host_team __type="str">ホストチームＢ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">1</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">110</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">1</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｃ</room_name>
+			<host_user __type="str">ホストユーザーＣ</host_user>
+			<host_team __type="str">ホストチームＣ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">2</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">111</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">2</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｄ</room_name>
+			<host_user __type="str">ホストユーザーＤ</host_user>
+			<host_team __type="str">ホストチームＤ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">0</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">112</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">3</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｅ</room_name>
+			<host_user __type="str">ホストユーザーＥ</host_user>
+			<host_team __type="str">ホストチームＥ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">1</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">113</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">0</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｆ</room_name>
+			<host_user __type="str">ホストユーザーＦ</host_user>
+			<host_team __type="str">ホストチームＦ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">2</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">114</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">1</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｇ</room_name>
+			<host_user __type="str">ホストユーザーＧ</host_user>
+			<host_team __type="str">ホストチームＧ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">0</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">115</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">2</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｈ</room_name>
+			<host_user __type="str">ホストユーザーＨ</host_user>
+			<host_team __type="str">ホストチームＨ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">1</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">116</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">3</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｉ</room_name>
+			<host_user __type="str">ホストユーザーＩ</host_user>
+			<host_team __type="str">ホストチームＩ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">2</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">117</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">0</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｊ</room_name>
+			<host_user __type="str">ホストユーザーＪ</host_user>
+			<host_team __type="str">ホストチームＪ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">0</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">118</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">1</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｋ</room_name>
+			<host_user __type="str">ホストユーザーＫ</host_user>
+			<host_team __type="str">ホストチームＫ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">1</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">119</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">2</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｌ</room_name>
+			<host_user __type="str">ホストユーザーＬ</host_user>
+			<host_team __type="str">ホストチームＬ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">2</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">120</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">3</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｍ</room_name>
+			<host_user __type="str">ホストユーザーＭ</host_user>
+			<host_team __type="str">ホストチームＭ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">0</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">121</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">0</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｎ</room_name>
+			<host_user __type="str">ホストユーザーＮ</host_user>
+			<host_team __type="str">ホストチームＮ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">1</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">122</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">1</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｏ</room_name>
+			<host_user __type="str">ホストユーザーＯ</host_user>
+			<host_team __type="str">ホストチームＯ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">2</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">123</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">2</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｐ</room_name>
+			<host_user __type="str">ホストユーザーＰ</host_user>
+			<host_team __type="str">ホストチームＰ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">0</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">124</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">3</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｑ</room_name>
+			<host_user __type="str">ホストユーザーＱ</host_user>
+			<host_team __type="str">ホストチームＱ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">1</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">125</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">0</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｒ</room_name>
+			<host_user __type="str">ホストユーザーＲ</host_user>
+			<host_team __type="str">ホストチームＲ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">2</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">126</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">1</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｓ</room_name>
+			<host_user __type="str">ホストユーザーＳ</host_user>
+			<host_team __type="str">ホストチームＳ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">0</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">127</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">2</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｔ</room_name>
+			<host_user __type="str">ホストユーザーＴ</host_user>
+			<host_team __type="str">ホストチームＴ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">1</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">128</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">3</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｕ</room_name>
+			<host_user __type="str">ホストユーザーＵ</host_user>
+			<host_team __type="str">ホストチームＵ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">2</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">129</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">0</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｖ</room_name>
+			<host_user __type="str">ホストユーザーＶ</host_user>
+			<host_team __type="str">ホストチームＶ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">0</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">130</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">1</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｗ</room_name>
+			<host_user __type="str">ホストユーザーＷ</host_user>
+			<host_team __type="str">ホストチームＷ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">1</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">131</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">2</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｘ</room_name>
+			<host_user __type="str">ホストユーザーＸ</host_user>
+			<host_team __type="str">ホストチームＸ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">2</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">132</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">3</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｙ</room_name>
+			<host_user __type="str">ホストユーザーＹ</host_user>
+			<host_team __type="str">ホストチームＹ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">0</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">133</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">0</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<room_info>
+			<room_name __type="str">部屋Ｚ</room_name>
+			<host_user __type="str">ホストユーザーＺ</host_user>
+			<host_team __type="str">ホストチームＺ</host_team>
+			<host_division __type="u8">0</host_division>
+			<net_stat __type="u8">3</net_stat>
+			<player __type="u8">0</player>
+			<player_num __type="u8">1</player_num>
+			<player_max __type="u8">2</player_max>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">1</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">134</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">1</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+		<setting_info>
+			<player __type="str">1vs1</player>
+			<player __type="str">2vs2</player>
+			<player __type="str">3vs3</player>
+			<player __type="str">4vs4</player>
+			<private_max_home __type="str">0</private_max_home>
+			<private_max_home __type="str">1</private_max_home>
+			<private_max_home __type="str">2</private_max_home>
+			<private_max_home __type="str">3</private_max_home>
+			<private_max_away __type="str">0</private_max_away>
+			<private_max_away __type="str">1</private_max_away>
+			<private_max_away __type="str">2</private_max_away>
+			<private_max_away __type="str">3</private_max_away>
+			<private_max_away __type="str">4</private_max_away>
+			<host_division __type="str">指定なし</host_division>
+			<host_division __type="str">ディビジョンx以上</host_division>
+			<host_division __type="str">ディビジョンx以下</host_division>
+			<host_division __type="str">同ディビジョン</host_division>
+			<playstyle_type __type="str">指定なし</playstyle_type>
+			<playstyle_type __type="str">同スタイル（自分と同じスタイル）</playstyle_type>
+			<play_time __type="str">5分</play_time>
+			<play_time __type="str">10分</play_time>
+			<play_time __type="str">15分</play_time>
+			<play_time __type="str">20分</play_time>
+			<play_time __type="str">30分</play_time>
+			<play_time __type="str">45分</play_time>
+			<wait_time __type="str">短め（公式大会と同じ）</wait_time>
+			<wait_time __type="str">標準（ランクマッチと同じ）</wait_time>
+			<wait_time __type="str">長め</wait_time>
+			<exist_ex __type="str">なし</exist_ex>
+			<exist_ex __type="str">あり</exist_ex>
+			<exist_pk __type="str">なし</exist_pk>
+			<exist_pk __type="str">あり</exist_pk>
+			<friend __type="str">設定しない</friend>
+			<friend __type="str">設定する</friend>
+			<room_info>
+				<room_name __type="str">デフォルト部屋名</room_name>
+				<host_user __type="str">デフォルトホストユーザー名</host_user>
+				<host_team __type="str">デフォルトホストチーム名</host_team>
+				<host_division __type="u8">0</host_division>
+				<player __type="u8">0</player>
+				<private_max_home __type="u8">0</private_max_home>
+				<private_max_away __type="u8">0</private_max_away>
+				<playstyle_type __type="u8">0</playstyle_type>
+				<play_time __type="u8">1</play_time>
+				<wait_time __type="u8">1</wait_time>
+				<exist_ex __type="u8">1</exist_ex>
+				<exist_pk __type="u8">1</exist_pk>
+				<friend __type="u8">0</friend>
+			</room_info>
+		</setting_info>
+	</input>
+	<output>
+		<change __type="u8">0</change>
+		<name __type="str">自分のユーザー名</name>
+		<team __type="str">自分のチーム名</team>
+		<room_info>
+			<room_name __type="str">部屋名</room_name>
+			<host_user __type="str">ホストユーザー名</host_user>
+			<host_team __type="str">ホストチーム名</host_team>
+			<host_division __type="u8">0</host_division>
+			<player __type="u8">0</player>
+			<private_max_home __type="u8">0</private_max_home>
+			<private_max_away __type="u8">0</private_max_away>
+			<playstyle_type __type="u8">0</playstyle_type>
+			<play_time __type="u8">1</play_time>
+			<wait_time __type="u8">1</wait_time>
+			<exist_ex __type="u8">1</exist_ex>
+			<exist_pk __type="u8">1</exist_pk>
+			<friend __type="u8">0</friend>
+			<pass_code __type="str">0000</pass_code>
+			<com_team_emb_96>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">109</id>
+				</input>
+			</com_team_emb_96>
+			<com_user_icon>
+				<input>
+					<change __type="u8">1</change>
+					<id __type="u8">0</id>
+				</input>
+			</com_user_icon>
+		</room_info>
+	</output>
+</mo_unrankmatch_top>

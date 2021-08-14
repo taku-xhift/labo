@@ -1,0 +1,14 @@
+
+
+Struct: &PlayerData
+    playerName: name
+    playerid:   id
+
+
+#- &mark foo
+#- bar
+#- *mark
+#- *mark
+
+value: *PlayerData
+

@@ -1,0 +1,37 @@
+OK
+
+position = (.0f, .0f, .0f);
+size = (1.0f, 1.0f, 1.0f);
+axis = (1.0f, 1.0f, 1.0f);
+velocity = (3.0f, 1.0f, 2.0f);
+quaternion = (1.0f, 2.0f, 3.0f, 4.0f);
+
+
+radius = 59.0f;
+
+mass = 1000;
+
+angle = 29;
+
+
+
+linearDamping = 120;
+
+angularDamping = .2f;
+
+fricrtion = 1.0f;
+
+restitution = .3f;
+
+shape = sphere;
+
+existenceForm = fixed;
+
+collisionQuality = move;
+
+CollisionGroup = player;
+
+
+
+
+

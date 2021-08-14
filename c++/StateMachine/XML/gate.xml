@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE FSM SYSTEM "fsm.dtd">
+
+<FSM name="Gate" initial="Locked">
+
+  <State name="Locked">
+    <Event name="Coin" action="Unlock" transition="Unlocked"/>
+    <Event name="Pass" action="Alarm"/>
+  </State>
+
+  <State name="Unlocked">
+    <Event name="Coin" action="ThankYou"/>
+    <Event name="Pass" action="Lock" transition="Locked"/>
+  </State>
+
+</FSM>
